@@ -46,7 +46,7 @@ Where `PLATFORM_NAME` is one of `android` or `ios`.
 
 There are two types of build profiles - generic and managed. _(Building managed projects is not supported at the moment.)_
 
-**Generic projects** make almost no assumptions about your project's structure. The only requirement is that you need to have the native code in the repository (as contrary to managed Expo projects). No matter if you've intialized your project with `expo init` or with `npx react-native init`, you should be able to build it with EAS Builds.
+**Generic projects** make almost no assumptions about your project's structure. The only requirement is that your project follows the general structure of React Native projects. This means there are `android` and `ios` directories in the root directory with the Gradle and Xcode projects, respectively. No matter if you've intialized your project with `expo init` or with `npx react-native init`, you should be able to build it with EAS Builds.
 
 **Managed projects** are much simpler in terms of the project's structure and the knowledge needed to start developing your application. Those projects don't have the native code in the repository and they are tightly coupled with Expo.
 
@@ -61,24 +61,34 @@ The schema of a build profile for a generic Android project looks like this:
   "workflow": "generic",
   "credentialsSource": "local" | "remote" | "auto", // default: "auto"
   "withoutCredentials": boolean, // default: false
-  "gradleCommand": string, // default: ":app:assembleRelease"
-  "artifactPath": string // default: "android/app/build/outputs/apk/release/app-release.apk"
+  "gradleCommand": string, // default: ":app:bundleRelease"
+  "artifactPath": string // default: "android/app/build/outputs/bundle/release/app-release.aab"
 }
 ```
 
 - `"workflow": "generic"` indicates that your project is a generic one.
 - `credentialsSource` defines the credentials source for the project build. If you want to take advantage of your own `credentials.json` file, set it to `local` ([learn more on this here](../advanced-credentials/)). If you always want to use credentials stored on Expo servers, choose `remote`. If you're not sure what to do but you probably won't be needing to run builds from a CI, choose `auto` (this is the default option).
 - `withoutCredentials` when set to `true`, Expo CLI won't require you to configure credentials when building the app using this profile. It comes in handy when you want to build debug binaries and the debug keystore is checked in to the repository. The default is `false`.
-- `gradleCommand` defines the Gradle task to be run on Expo servers to build your project. You can set it to any valid Gradle task, e.g. `:app:assembleDebug` to build a debug binary. The default Gradle command is `:app:assembleRelease`.
-- `artifactPath` is the path where EAS Builds is going to look for the build artifact. The default is `android/app/build/outputs/apk/release/app-release.apk`.
+- `gradleCommand` defines the Gradle task to be run on Expo servers to build your project. You can set it to any valid Gradle task, e.g. `:app:assembleDebug` to build a debug binary. The default Gradle command is `:app:bundleRelease`.
+- `artifactPath` is the path where EAS Builds is going to look for the build artifact. The default is `android/app/build/outputs/bundle/release/app-release.aab`.
 
 #### Examples
 
-This is the minimal working example. Expo CLI will ask you for the app's credentials, the project will be built with the `./gradlew :app:assembleRelease` command, and you'll receive an archive containing the `android/app/build/outputs/apk/release/app-release.apk` file.
+This is the minimal working example. Expo CLI will ask you for the app's credentials, the project will be built with the `./gradlew :app:bundleRelease` command, and you'll receive an archive containing the `android/app/build/outputs/bundle/release/app-release.aab` file.
 
 ```json
 {
   "workflow": "generic"
+}
+```
+
+If you'd like to build a release APK (AAB is built by default), use this example:
+
+```json
+{
+  "workflow": "generic",
+  "gradleCommand": ":app:assembleRelease",
+  "artifactPath": "android/app/build/outputs/apk/release/app-release.apk"
 }
 ```
 
@@ -121,7 +131,7 @@ The schema of a build profile for a generic iOS project looks like this:
 
 - `"workflow": "generic"` indicates that your project is a generic one.
 - `credentialsSource` defines the credentials source for the project build. If you want to take advantage of your own `credentials.json` file, set it to `local` ([learn more on this here](../advanced-credentials/)). If you always want to use credentials stored on Expo servers, choose `remote`. If you're not sure what to do but you probably won't be needing to run builds from a CI, choose `auto` (this is the default option).
-- `artifactPath` is the path where EAS Builds is going to look for the build artifact. The default is `ios/build/App.ipa`.
+- `artifactPath` is the path where EAS Builds is going to look for the build artifact. You should modify that path only if you are using a custom `Gymfile`. The default is `ios/build/App.ipa`.
 
 #### Examples
 
