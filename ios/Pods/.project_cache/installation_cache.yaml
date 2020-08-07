@@ -8476,6 +8476,27 @@ CACHE_KEYS:
     PROJECT_NAME: EXSpeech
     SPECS:
       - EXSpeech (8.3.0)
+  EXSplashScreen:
+    BUILD_SETTINGS_CHECKSUM:
+      EXSplashScreen:
+        :debug: 438696b27ec330435c6762015b94a5f9
+        :release: 438696b27ec330435c6762015b94a5f9
+    CHECKSUM: 9423d258b71afa5bf128a83dcb57b636d9900a74
+    FILES:
+      - "../../packages/expo-splash-screen/ios/EXSplashScreen/EXSplashScreenConfiguration.h"
+      - "../../packages/expo-splash-screen/ios/EXSplashScreen/EXSplashScreenConfiguration.m"
+      - "../../packages/expo-splash-screen/ios/EXSplashScreen/EXSplashScreenController.h"
+      - "../../packages/expo-splash-screen/ios/EXSplashScreen/EXSplashScreenController.m"
+      - "../../packages/expo-splash-screen/ios/EXSplashScreen/EXSplashScreenModule.h"
+      - "../../packages/expo-splash-screen/ios/EXSplashScreen/EXSplashScreenModule.m"
+      - "../../packages/expo-splash-screen/ios/EXSplashScreen/EXSplashScreenService.h"
+      - "../../packages/expo-splash-screen/ios/EXSplashScreen/EXSplashScreenService.m"
+      - "../../packages/expo-splash-screen/ios/EXSplashScreen/EXSplashScreenViewNativeProvider.h"
+      - "../../packages/expo-splash-screen/ios/EXSplashScreen/EXSplashScreenViewNativeProvider.m"
+      - "../../packages/expo-splash-screen/ios/EXSplashScreen/EXSplashScreenViewProvider.h"
+    PROJECT_NAME: EXSplashScreen
+    SPECS:
+      - EXSplashScreen (0.5.0)
   EXSQLite:
     BUILD_SETTINGS_CHECKSUM:
       EXSQLite:
@@ -8861,8 +8882,8 @@ CACHE_KEYS:
       - nanopb/encode (0.3.9011)
   Pods-Exponent:
     BUILD_SETTINGS_CHECKSUM:
-      Debug: 04a59f10d746f86eefc975d9155432b0
-      Release: 04a59f10d746f86eefc975d9155432b0
+      Debug: 8f0bedb154f8a4c981ac44d7554a4f9d
+      Release: 8f0bedb154f8a4c981ac44d7554a4f9d
     FILES:
       - "${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMLVisionFaceModel/GoogleMVFaceDetectorResources.bundle"
       - "${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle"
@@ -8875,12 +8896,12 @@ CACHE_KEYS:
       - "${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle"
   Pods-ExponentIntegrationTests:
     BUILD_SETTINGS_CHECKSUM:
-      Debug: 1b2735caf5950e599f0dfb2be2fab66c
-      Release: 1b2735caf5950e599f0dfb2be2fab66c
+      Debug: fe3ef8249468a122c2b80f2de672b0bd
+      Release: fe3ef8249468a122c2b80f2de672b0bd
   Pods-Tests:
     BUILD_SETTINGS_CHECKSUM:
-      Debug: 1b2735caf5950e599f0dfb2be2fab66c
-      Release: 1b2735caf5950e599f0dfb2be2fab66c
+      Debug: fe3ef8249468a122c2b80f2de672b0bd
+      Release: fe3ef8249468a122c2b80f2de672b0bd
   Protobuf:
     BUILD_SETTINGS_CHECKSUM:
       Protobuf:
