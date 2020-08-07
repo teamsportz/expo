@@ -7507,11 +7507,10 @@ CACHE_KEYS:
       Branch:
         :debug: 9d186888e388d0c6920574cb9733ddc3
         :release: 9d186888e388d0c6920574cb9733ddc3
-    CHECKSUM: 6e7421e1f3c0adebdf80008a40a74969b2603cf8
+    CHECKSUM: 446aeb832102f56f04edf5fa7cb0a752dc392ca7
     PROJECT_NAME: Branch
     SPECS:
-      - Branch (0.29.0)
-      - Branch/Core (0.29.0)
+      - Branch (0.34.0)
   CocoaLumberjack:
     BUILD_SETTINGS_CHECKSUM:
       CocoaLumberjack:
@@ -7741,7 +7740,7 @@ CACHE_KEYS:
       EXBranch:
         :debug: a2a7a793c27f88a63feac1a8a5851249
         :release: a2a7a793c27f88a63feac1a8a5851249
-    CHECKSUM: d88a69d32b6a161611497f1dc264cf1cb32be886
+    CHECKSUM: c8304c9cda0a4750cefbe90da265cc40c3be3c9d
     FILES:
       - "../../packages/expo-branch/ios/EXBranch/EXBranchManager.h"
       - "../../packages/expo-branch/ios/EXBranch/EXBranchManager.m"
@@ -8759,7 +8758,7 @@ CACHE_KEYS:
       FirebaseMLVisionFaceModel:
         :debug: be561dec23d92ce53122582403370726
         :release: be561dec23d92ce53122582403370726
-    CHECKSUM: d6ba42000f263df52187aee936262bc2002b3389
+    CHECKSUM: 1003e20ab8979cb77d7a39c93faeb58c959a63f1
     PROJECT_NAME: FirebaseMLVisionFaceModel
     SPECS:
       - FirebaseMLVisionFaceModel (0.19.0)
@@ -8942,8 +8941,8 @@ CACHE_KEYS:
       - nanopb/encode (0.3.9011)
   Pods-Exponent:
     BUILD_SETTINGS_CHECKSUM:
-      Debug: 1910f945196637840f28109182d0284b
-      Release: 1910f945196637840f28109182d0284b
+      Debug: 4288c88765059527524ceb954bfb6de5
+      Release: 4288c88765059527524ceb954bfb6de5
     FILES:
       - "${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMLVisionFaceModel/GoogleMVFaceDetectorResources.bundle"
       - "${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle"
@@ -8956,12 +8955,12 @@ CACHE_KEYS:
       - "${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle"
   Pods-ExponentIntegrationTests:
     BUILD_SETTINGS_CHECKSUM:
-      Debug: bf89e25db4c233e74fd006aac0fa09ef
-      Release: bf89e25db4c233e74fd006aac0fa09ef
+      Debug: 60da65f19deb47e4c68bc48c3fe2c835
+      Release: 60da65f19deb47e4c68bc48c3fe2c835
   Pods-Tests:
     BUILD_SETTINGS_CHECKSUM:
-      Debug: bf89e25db4c233e74fd006aac0fa09ef
-      Release: bf89e25db4c233e74fd006aac0fa09ef
+      Debug: 60da65f19deb47e4c68bc48c3fe2c835
+      Release: 60da65f19deb47e4c68bc48c3fe2c835
   Protobuf:
     BUILD_SETTINGS_CHECKSUM:
       Protobuf:
