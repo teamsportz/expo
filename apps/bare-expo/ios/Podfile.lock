@@ -1,6 +1,6 @@
 PODS:
   - Amplitude-iOS (4.7.1)
-  - Analytics (3.9.0)
+  - Analytics (4.0.4)
   - AppAuth (1.4.0):
     - AppAuth/Core (= 1.4.0)
     - AppAuth/ExternalUserAgent (= 1.4.0)
@@ -152,7 +152,7 @@ PODS:
   - EXSecureStore (9.1.0):
     - UMCore
   - EXSegment (8.2.1):
-    - Analytics (~> 3.7)
+    - Analytics (~> 4.0)
     - UMConstantsInterface
     - UMCore
   - EXSensors (9.0.1):
@@ -945,7 +945,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Amplitude-iOS: a0347ab05f2d196e6bbb22cc6f62eea33b5a035b
-  Analytics: 67cce2129e4b0df5b532bf0c043043f292b32f5f
+  Analytics: 231b01fdaa9704105881dc82def7b7b1d6571edb
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: cde416483dac037923206447da6e1454df403714
@@ -997,7 +997,7 @@ SPEC CHECKSUMS:
   EXScreenCapture: ed9b1813758bf0057fc3780043bfa4dc0956a9b5
   EXScreenOrientation: c9cfb33eaff7ce83330c5238eba523d027b9eb53
   EXSecureStore: 321ee488c66ef1af2aa73701f01cdd512f69ecdf
-  EXSegment: 7f9fd99f88f5b1ff06d323a153873d2105d390f4
+  EXSegment: 853e00760287d751cdf88e09c4fe2f23cffbd6f2
   EXSensors: 761f6bd03eb13ff7dfffe955de7edce3b73306c4
   EXSharing: 05c66cc124b0ea49a0525ba0e9816c5f39d368f9
   EXSMS: 93b2aafc8aca983cecf5905cf03ac80a678c61d9
